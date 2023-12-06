@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Responsive Multiplication Table</title>
+    <meta charset="utf-8">
+    <link href="css/table.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+</head>
+<body>
+    <h1>Responsive Multiplication Table</h1>
+    <p>
+        Please input values between -200 to 200
+    </p>
+    <div class="uiContainer">
+        <div class="uiCol">
+            <form>
+                <label for="min_col">Minimum Column value: </label>
+                <input type="text" id="min_col" name="min_col" value="1"><br>
+                <label for="max_col">Maximum Column value: </label>
+                <input type="text" id="max_col" name="max_col" value="12"><br>
+                <label for="min_col">Minimum Row value: </label>
+                <input type="text" id="min_row" name="min_row" value="1"><br>
+                <label for="min_col">Maximum Row value: </label>
+                <input type="text" id="max_row" name="max_row" value="12"><br>
+                <button type="button" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="uiCol">
+            <div class="errorContainer">
+                <error id="error_msg"></error>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div id="tableHolder"></div>
+    <!-- <table id="theTable">
+            <tr> 
+                <td id="col_output">
+                    <tr id="row_output"></tr>  
+                </td>
+            </tr>
+    </table> -->
+
+    <script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src = "js/jquery.validate.js"></script>
+    <script src = "js/table.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</body>
+
+
+</html>
